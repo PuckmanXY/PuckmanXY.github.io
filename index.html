@@ -6,7 +6,7 @@ body{
 	background-color: #263238;
 }
 
-#About{
+#Header{
 	background-image: url(http://static.superiorwallpapers.com/images/lthumbs/2015-06/8537_Night-view-of-sky-full-of-stars.jpg);
 	background-size: 100% 150%;
 	background-position: center;
@@ -15,7 +15,7 @@ body{
 	width: 100%;
 }
 
-#About h1{
+#Header h1{
 	font-family: 'Indie Flower', cursive;
 	font-size: 72px;
 	padding-top: 14%;
@@ -23,7 +23,7 @@ body{
 	margin-top: 0 !important
 }
 
-#About h3{
+#Header h3{
 	font-family: 'Encode Sans Expanded';
 	padding-bottom:18%;
 	font-size: 30px;
@@ -34,11 +34,24 @@ body{
 	border-radius: 10px;
 }
 
-.gambi{
-	color: #263238;
+#About p{
+	text-align: justify;
+    text-justify: inter-word;
 }
 
-#Portfolio h1{
+#About h2{
+	padding-bottom: 9%;
+	color: white;
+}
+
+.img-about{
+	height: 100%;
+	width: 100%;
+	margin: 5% 0% 5% 0%;
+	border-radius:50%;
+}
+
+#Portfolio h1, #About h1{
 	font-family: 'Gloria Hallelujah';
 	color: white;
 }
@@ -82,21 +95,30 @@ body{
  	</div>
 	
 
-<!--about section-->
-	<div id="About">
+<!--Header section-->
+	<div id="Header">
 		<div class="center">
 			<h1>Kayo Campos</h1>
 			<h3>Beggining front-end developer</h3>
 		</div>
 		</div>
 	</div>
-	
+
+<!--About section-->
+	<div id="About" class="container">
+		<h1 class="center">About</h1>
+		<div class="box row blue-grey darken-3 hoverable">
+			<div class="col s5"><img class="img-about" src="img/About_Img.png"></div>
+			<div class="col s7"><h2 class="center hide-on-med-and-down">Who's Kayo?</h2><p class="valign-wrapper">Well, I'm a 17 years old latin-american guy, beggining developer currently studying Computer Engineering at IFCE and looking for new chances to learn new things! Besides that, I'm also an amateur photographer, musician for myself, beat poetry enthusiastic and cool stuff follower!</p></div>
+		</div>
+
+	</div>
 
 <!--portfolio section-->
 	<div id="Portfolio" class="container blue-grey darken-4">
 		<h1 class="center">Portfolio</h1>
 		<div class="row">
-			<div class="box col s5 blue-grey darken-3">
+			<div class="box col s5 hoverable blue-grey darken-3">
 				<div class="container">
 					<h5 class="center">Lucas Silveira</h5>
 					<a href="https://codepen.io/Puckman/full/PJGOdV"><img class="img-portfolio" src="img/Lucas_Silveira.png"></a>
@@ -105,7 +127,7 @@ body{
 			</div>
 			<div class="col s2">
 			</div>
-			<div class="box col s5 blue-grey darken-3">
+			<div class="box col s5 hoverable blue-grey darken-3">
 				<div class="container">
 					<h5 class="center">Pursuit Game</h5>
 					<a href="https://github.com/PuckmanXY/Pursuit-game"><img class="img-portfolio" src="img/Pursuit_Game.png"></a>
@@ -114,7 +136,7 @@ body{
 			</div>
 		</div>
 		<div class="row">
-			<div class="box col s5 blue-grey darken-3">
+			<div class="box col s5 hoverable blue-grey darken-3">
 				<div class="container">
 					<h5 class="center">Fighting Beasts</h5>
 					<a href="https://github.com/PuckmanXY/Fighting-Beasts"><img class="img-portfolio" src="img/Fighting_Beasts.png"></a>
@@ -123,7 +145,7 @@ body{
 			</div>
 			<div class="col s2">
 			</div>
-			<div class="box col s5 blue-grey darken-3">
+			<div class="box col s5 hoverable blue-grey darken-3">
 				<div class="container">
 					<h5 class="center">Projeto Alma</h5>
 					<a href="https://www.flickr.com/photos/146070857@N03/albums/72157678072283316"><img class="img-portfolio" src="img/Projeto_Alma.png"></a>
