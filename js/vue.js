@@ -29,30 +29,34 @@ var aboutSectionVue = new Vue({
 var portfolioSectionVue = new Vue({
     el: '#Portfolio',
     data: {
-        projects: [
-            {
+        projects: [  //Cada elemento do array é composto por 1 array contendo 2 objetos (cada um um projeto)
+            [{
                 name: 'Lucas Silveira Webpage',
                 iconURL: 'img/Lucas_Silveira.png',
                 description: 'Minha primeira página web utilizando o framework Bootstrap',
+                linkForProject: 'https://codepen.io/Puckman/full/PJGOdV',
             },
 
             {
                 name: 'Pursuit Game',
                 iconURL: 'img/Pursuit_Game.png',
                 description: 'Jogo feito em Python utilizando a biblioteca Turtle',
-            },
+                linkForProject: 'https://github.com/PuckmanXY/Pursuit-game',
+            }],
 
-            {
+            [{
                 name: 'Fighting Beasts',
                 iconURL: 'img/Fighting_Beasts.png',
                 description: 'Jogo de texto com elementos rpg em Python utilizando a ferramenta TKinter',
+                linkForProject: 'https://github.com/PuckmanXY/Fighting-Beasts',
             },
 
             {
                 name: 'Projeto Alma',
                 iconURL: 'img/Projeto_Alma.png',
-                description: '>Meu primeiro projeto fotográfico no Flickr',
-            },
+                description: 'Meu primeiro projeto fotográfico no Flickr',
+                linkForProject: 'https://www.flickr.com/photos/146070857@N03/sets/72157678072283316',
+            }],
         ]
     }
 })

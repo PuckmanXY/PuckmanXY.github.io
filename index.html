@@ -181,51 +181,33 @@ body{
 	<!--Portfolio sections-->
 		<div id="Portfolio" class="container">
 			<h1 class="center">Portfólio</h1>
-			<div class="row">
-				<div class="box col s5 hoverable blue-grey darken-3">
-					<a href="https://codepen.io/Puckman/full/PJGOdV">
-						<div class="container">
-							<h5 class="center">Lucas Silveira</h5>
-							<img class="img-portfolio" src="img/Lucas_Silveira.png">
-							<p class="center">Minha primeira página web utilizando o framework Bootstrap</p>
-						</div>
-					</a>
-				</div>
-				<div class="col s2">
-				</div>
-				<div class="box col s5 hoverable blue-grey darken-3">
-					<a href="https://github.com/PuckmanXY/Pursuit-game">
-						<div class="container">
-							<h5 class="center">Pursuit Game</h5>
-							<img class="img-portfolio" src="img/Pursuit_Game.png">
-							<p class="center">Jogo feito em Python utilizando a biblioteca Turtle</p>
-						</div>
-					</a>
-				</div>
-			</div>
-			<div class="row">
-				<div class="box col s5 hoverable blue-grey darken-3">
-					<a href="https://github.com/PuckmanXY/Fighting-Beasts">
-						<div class="container">
-							<h5 class="center">Fighting Beasts</h5>
-							<img class="img-portfolio" src="img/Fighting_Beasts.png">
-							<p class="center">Jogo de texto com elementos rpg em Python utilizando a ferramenta TKinter</p>
-						</div>
-					</a>
-				</div>
-				<div class="col s2">
-				</div>
-				<div class="box col s5 hoverable blue-grey darken-3">
-					<a href="https://www.flickr.com/photos/146070857@N03/albums/72157678072283316">
-						<div class="container">
-							<h5 class="center">Projeto Alma</h5>
-							<img class="img-portfolio" src="img/Projeto_Alma.png">
-							<p class="center">Meu primeiro projeto fotográfico no Flickr</p>
-						</div>
-					</a>
+			<div v-for="row in projects"> <!-- Laço que gera uma linha contendo 2 projetos (ver anotações em js/vue.js -> portfolioSectionVue.data.projects) -->
+				<div class="row">
+					<div class="box col s5 hoverable blue-grey darken-3">
+						<a :href="row[0].linkForProject">
+							<div class="container">
+								<h5 class="center"> {{ row[0].name }} </h5>
+								<img class="img-portfolio" :src="row[0].iconURL">
+								<p class="center">{{ row[0].description }}</p>
+							</div>
+						</a>
+					</div>
+					<div class="col s2">
+					</div>
+					<div class="box col s5 hoverable blue-grey darken-3">
+						<a :href="row[1].linkForProject">
+							<div class="container">
+								<h5 class="center">{{ row[1].name }}</h5>
+								<img class="img-portfolio" :src="row[1].iconURL">
+								<p class="center">{{ row[1].description }}</p>
+							</div>
+						</a>
+					</div>
 				</div>
 			</div>
 		</div>
+		
+
 
 		<!--Abilities section-->
 			<div id="Abilities" class="center container">
