@@ -110,6 +110,7 @@ body{
 .small-img-mobile{
 	width: 50px;
 	height: 50px;
+	margin-top: 40%;
 }
 .email{
 	color: white !important;
@@ -129,7 +130,7 @@ body{
     </head>
 
     <body>
-	<div id="app">
+	<div id="navbarVue">
 <!--navbar-->
 		<div class="navbar-fixed">
 			<nav class="blue-grey darken-4">
@@ -163,14 +164,14 @@ body{
 		<div id="About" class="container">
 			<h1 class="center">Sobre</h1>
 			<div class="box row blue-grey darken-3 hoverable">
-				<div class="col s5">
+				<div class="col s5 center">
 					<img class="img-about" src="img/About_Img.png" alt="Kayo Pic">
 					<a href="https://github.com/PuckmanXY"><img class="small-img-mobile center hide-on-large-only" src="img/GitHub.png"></a>
 					<a href="https://github.com/PuckmanXY/PuckmanXY.github.io/blob/master/curriculum/Curriculum.pdf"><img class="small-img-mobile center hide-on-large-only" src="img/Curriculum.png"></a>
 				</div>
-				<div class="col s7"><h2 class="center hide-on-med-and-down">Quem sou eu?</h2><p class="valign-wrapper">Olá, me chamo Kayo e tenho 17 anos. Sou desenvolvedor iniciante atualmente cursando Engenharia de Computação no Instituto Federal de Educação, Ciência e Tecnologia do Ceará e buscando novas chances de aprender novas coisas! Além disso também sou fotógrafo amador, músico para mim mesmo e entusiasta da poesia beat!</p>
-					<a href="https://github.com/PuckmanXY"><img class="small-img center hide-on-med-and-down" src="img/GitHub.png"></a>
-					<a href="https://github.com/PuckmanXY/PuckmanXY.github.io/blob/master/curriculum/Curriculum.pdf"><img class="small-img center hide-on-med-and-down" src="img/Curriculum.png"></a>
+				<div class="col s7 center"><h2 class="center hide-on-med-and-down"> {{ title }} </h2><p class="valign-wrapper">{{ description }}</p>
+					<a href="https://github.com/PuckmanXY"><img class="small-img hide-on-med-and-down" src="img/GitHub.png"></a>
+					<a href="https://github.com/PuckmanXY/PuckmanXY.github.io/blob/master/curriculum/Curriculum.pdf"><img class="small-img hide-on-med-and-down" src="img/Curriculum.png"></a>
 				</div>
 
 			</div>
@@ -178,7 +179,7 @@ body{
 		</div>
 
 	<!--Portfolio section-->
-		<div id="Portfolio" class="container blue-grey darken-4">
+		<div id="Portfolio" class="container">
 			<h1 class="center">Portfólio</h1>
 			<div class="row">
 				<div class="box col s5 hoverable blue-grey darken-3">
