@@ -34,7 +34,7 @@ var portfolioSectionVue = new Vue({
                 name: 'Lucas Silveira Webpage',
                 iconURL: 'img/Lucas_Silveira.png',
                 description: 'Minha primeira página web utilizando o framework Bootstrap',
-                linkForProject: 'https://codepen.io/Puckman/full/PJGOdV',
+                linkForProject: 'https://puckmanxy.github.io/Tribute-page/',
             },
 
             {
