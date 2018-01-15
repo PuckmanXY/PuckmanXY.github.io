@@ -1,137 +1,20 @@
 <!DOCTYPE html>
-
-
-<style>
-body{
-	background-color: #263238;
-}
-#Header{
-	background-image: url(img/Sky.jpg);
-	background-size: 100% 150%;
-	background-position: center;
-	background-repeat: no-repeat;
-	height: 100%;
-	width: 100%;
-}
-#Header h1, #Header-med-and-low h1{
-	font-family: 'Indie Flower', cursive;
-	font-size: 72px;
-	padding-top: 14%;
-	color: #FFF;
-	margin-top: 0 !important
-}
-#Header h3, #Header-med-and-low h3{
-	font-family: 'Encode Sans Expanded';
-	padding-bottom:18%;
-	font-size: 30px;
-	color: #FFF;
-}
-#Header-med-and-low{
-	background-image: url(img/Sky.jpg);
-	background-position: center;
-	background-repeat: no-repeat;
-}
-.box{
-	border-radius: 10px;
-}
-#About p{
-	text-align: justify;
-    text-justify: inter-word;
-    color: white;
-}
-#About h2, h4{
-	padding-bottom: 9%;
-	color: white;
-}
-.img-about{
-	height: 100%;
-	width: 100%;
-	margin: 5% 0% 5% 0%;
-	border-radius:50%;
-	opacity: 0.8;
-}
-.img-about:hover{
-	height: 100%;
-	width: 100%;
-	margin: 5% 0% 5% 0%;
-	border-radius:50%;
-	opacity: 1;
-}
-#Portfolio h1, #About h1, #About h2, #About h4, #Abilities h1{
-	font-family: 'Helvetica';
-	color: white;
-}
-#Portfolio h5{
-	color: white;
-}
-#Portfolio p{
-	color: white;
-}
- #Abilities h5{
- 	 color: white;
- 	 padding-bottom: 5%;
- }
-.img-portfolio{
-	height: 100%;
-	width: 100%;
-}
-#Contact h2{
-	font-family: 'Helvetica';
-	color: white;
-}
-#Contact-on-med-and-down h1, #Contact-on-med-and-down h5{
-	font-family: 'Helvetica';
-	color: white;
-}
-.like{
-	padding-top: 4%;
-	margin-top: 5%;
-}
-#Footer{
-	background-color: #000;
-}
-#Footer p{
-	padding-top: 5%;
-	color: #9e9e9e;
-}
-#Footer img, #Contact img, #Contact-on-med-and-down img{
-	width: 64px;
-	height: 64px;
-}
-.small-img{
-	width: 64px;
-	height: 64px;
-}
-.small-img-abilities{
-	width: 64px;
-	height: 64px;
-	margin-top: 5%;
-}
-.small-img-mobile{
-	width: 50px;
-	height: 50px;
-	margin-top: 40%;
-}
-.email{
-	color: white !important;
-	padding-bottom: 5%;
-}
-</style>
-
+<head>
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Indie+Flower|Josefin+Sans" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah" rel="stylesheet">
+	<link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+	<link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+	<link rel="stylesheet" href="devicon.css">
+	<link rel="stylesheet" href="css/style.css" type="text/css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<title>Kayo Campos</title>
+  </head>
 
 <html>
-    <head>
-      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-      <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Josefin+Sans" rel="stylesheet">
-      <link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah" rel="stylesheet">
-      <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
-      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-      <title>Kayo Campos</title>
-    </head>
-
     <body>
+	<!--navbar-->
 	<div id="navbarVue">
-<!--navbar-->
 		<div class="navbar-fixed">
 			<nav class="blue-grey darken-4">
 				<div class="nav-wrapper">
@@ -210,20 +93,70 @@ body{
 
 
 		<!--Abilities section-->
-			<div id="Abilities" class="center container">
-				<h1>Habilidades</h1>
-				<div class="box blue-grey darken-3">
-				<a href="#Abilities"><img class="small-img-abilities" alt="Python" src="img/Python.png"></a>
-				<a href="#Abilities"><img class="small-img-abilities" alt="Java" src="img/Java.png"></a>
-				<a href="#Abilities"><img class="small-img-abilities" alt="Linguagem C" src="img/CLanguage.png"></a>
-				<a href="#Abilities"><img class="small-img-abilities" alt="HTML" src="img/HTML.png"></a>
-				<a href="#Abilities"><img class="small-img-abilities" alt="CSS" src="img/CSS.png"></a>
-				<h5 style="margin-top: 5%;">+ Programação estruturada (Linguagem C, Python)</h5>
-				<h5>+ Paradigma da Orientação a Objetos (Java, Python)</h5>
-				<h5>+ Desenvolvimento Front-end</h5>
+			<div id="Abilities" class="container">
+				<div class="hide-on-med-and-down">
+					<h1 class="center">Habilidades</h1>
+					<div class="box blue-grey darken-3">
+						<div class="row">
+							<div class="icons-abilities center col s6">
+								<i class="devicon-git-plain-wordmark"></i>
+								<br>
+								<i class="devicon-python-plain-wordmark"></i>
+								<i class="devicon-java-plain-wordmark"></i>
+								<br>
+								<i class="devicon-c-plain-wordmark"></i>
+								<i class="devicon-html5-plain-wordmark"></i>
+								<i class="devicon-css3-plain-wordmark"></i>
+								<br>
+								<i class="devicon-bootstrap-plain-wordmark"></i>
+								<i class="devicon-javascript-plain"></i>
+								<i class="devicon-vuejs-plain-wordmark"></i>
+								<i class="devicon-php-plain"></i>
+							</div>
+							<div class="container col s6">
+							<h5 style="padding-top: 18%;">
+								+ Paradigma estruturada e OO
+								<br>
+								<br>
+								+ Familiaridade com GIT
+								<br>
+								<br>
+								+ Desenvolvimento fullstack
+							</h5>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="hide-on-large-only">
+						<h1 class="center">Habilidades</h1>
+						<div class="box blue-grey darken-3">
+								<div class="icons-abilities center col s6">
+									<i class="devicon-git-plain-wordmark"></i>
+									<i class="devicon-python-plain-wordmark"></i>
+									<i class="devicon-java-plain-wordmark"></i>
+									<i class="devicon-c-plain-wordmark"></i>
+									<i class="devicon-html5-plain-wordmark"></i>
+									<i class="devicon-css3-plain-wordmark"></i>
+									<i class="devicon-bootstrap-plain-wordmark"></i>
+									<i class="devicon-javascript-plain"></i>
+									<i class="devicon-vuejs-plain-wordmark"></i>
+									<i class="devicon-php-plain"></i>
+								</div>
+								<h5 class="center">
+									+ Paradigma estruturada e OO
+									<br>
+									<br>
+									+ Familiaridade com GIT
+									<br>
+									<br>
+									+ Desenvolvimento fullstack
+								</h5>
+							</div>
+						</div>
 				</div>
 			</div>
 		<!--Contact section-->
+		<h1 class="center hide-on-med-and-down" style="color: white;">Contato</h1>
 			<div id="Contact" class="center container box blue-grey darken-3 hide-on-med-and-down">
 				<h2 class="like">Gostou do que viu?</h2>
 				<h2>Entre em contato</h2>
@@ -240,6 +173,7 @@ body{
 		<div id="Footer">
 			<div class="container">
 				<p class="center" style="padding-top: 5%;">by Kayo © 2017</p>
+				<p class="center" style="padding-top: 0%;">Icons by <a href="https://github.com/konpa">Julien Monty ©</a></p>
 				<div class="row center" style="margin-bottom: 0 !important;">
 					<a href="https://github.com/PuckmanXY"><img src="img/GitHub.png"></a>
 					<a href="https://codepen.io/Puckman/"><img src="img/codepen.png"></a>

@@ -11,9 +11,13 @@ var navbarVue = new Vue({
                 href: '#Portfolio',
             },
             {
+                name: 'Habilidades',
+                href: '#Abilities'
+            },
+            {
                 name: 'Contato',
                 href: '#Contact',
-            },
+            }
         ],
     },
 })
