@@ -26,7 +26,7 @@ var aboutSectionVue = new Vue({
     el: '#About',
     data: {
         title: 'Quem sou eu?',
-        description: 'Olá, me chamo Kayo e tenho 17 anos. Sou desenvolvedor iniciante atualmente cursando Engenharia de Computação no Instituto Federal de Educação, Ciência e Tecnologia do Ceará e buscando novas chances de aprender novas coisas! Além disso também sou fotógrafo amador, músico para mim mesmo e entusiasta da poesia beat!'
+        description: 'Olá, me chamo Kayo e tenho 18 anos. Sou desenvolvedor iniciante atualmente cursando Engenharia de Computação no Instituto Federal de Educação, Ciência e Tecnologia do Ceará e buscando novas chances de aprender novas coisas! Além disso também sou fotógrafo amador, músico para mim mesmo e entusiasta da poesia beat!'
     },
 })
 
@@ -56,10 +56,10 @@ var portfolioSectionVue = new Vue({
             },
 
             {
-                name: 'Projeto Alma',
-                iconURL: 'img/Projeto_Alma.png',
-                description: 'Meu primeiro projeto fotográfico no Flickr',
-                linkForProject: 'https://www.flickr.com/photos/146070857@N03/sets/72157678072283316',
+                name: 'APIs com Node',
+                iconURL: 'img/nodeJS.png',
+                description: 'Em meu github existem alguns repositórios de APIs feitas com NodeJS',
+                linkForProject: 'https://www.github.com/PuckmanXY',
             }],
         ]
     }
