@@ -1,194 +1,39 @@
 <!DOCTYPE html>
-<head>
-	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Indie+Flower|Josefin+Sans" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah" rel="stylesheet">
-	<link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
-	<link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
-	<link rel="stylesheet" href="devicon.css">
-	<link rel="stylesheet" href="css/style.css" type="text/css">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-	<title>Kayo Campos</title>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="Brazilian software engineer in love with functional programming, design of programming languages and programming paradigms"
+    />
+    <title>Kayo Campos</title>
+    <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="style.css" type="text/css">
+
+    <style type="text/css">
+      html, body, #root {
+        height: 100%;
+        width: 100%;
+
+        height: 100vh;
+        width: 100vw;
+
+        margin: 0;
+      }
+    </style>
   </head>
-
-<html>
-    <body>
-	<!--navbar-->
-	<div id="navbarVue">
-		<div class="navbar-fixed">
-			<nav class="blue-grey darken-4">
-				<div class="nav-wrapper">
-					<a href="#" class="brand-logo"></a>
-					<ul id="nav-mobile" class="right">
-						<li v-for="section in sections"><a :href="section.href">{{ section.name }}</a></li>
-					</ul>
-				</div>
-			</nav>
-		</div>
-		
-
-	<!--Header section-->
-		<div id="Header" class="hide-on-med-and-down">
-			<div class="center">
-				<h1>Kayo Campos</h1>
-				<h3>Desenvolvedor de software iniciante</h3>
-			</div>
-			</div>
-		</div>
-		<div id="Header-med-and-low" class="hide-on-large-only">
-			<div class="center">
-				<h1>Kayo Campos</h1>
-				<h3>Desenvolvedor de software iniciante</h3>
-			</div>
-			</div>
-		</div>
-
-	<!--About section-->
-		<div id="About" class="container">
-			<h1 class="center">Sobre</h1>
-			<div class="box row blue-grey darken-3 hoverable">
-				<div class="col s5 center">
-					<img class="img-about" src="img/About_Img.png" alt="Kayo Pic">
-					<a href="https://github.com/PuckmanXY"><img class="small-img-mobile center hide-on-large-only" src="img/GitHub.png"></a>
-					<a href="https://github.com/PuckmanXY/PuckmanXY.github.io/blob/master/curriculum/Curriculum.pdf"><img class="small-img-mobile center hide-on-large-only" src="img/Curriculum.png"></a>
-				</div>
-				<div class="col s7 center"><h2 class="center hide-on-med-and-down"> {{ title }} </h2><p class="valign-wrapper">{{ description }}</p>
-					<a href="https://github.com/PuckmanXY"><img class="small-img hide-on-med-and-down" src="img/GitHub.png"></a>
-					<a href="https://github.com/PuckmanXY/PuckmanXY.github.io/blob/master/curriculum/Curriculum.pdf"><img class="small-img hide-on-med-and-down" src="img/Curriculum.png"></a>
+  <body>
+    <div id="root">
+			<div class="intro">
+				<div class="intro__texts">
+					<h1 class="intro__main-text"><span><</span>kayo-campos<span> /></span></h1>
+					<h2 class="intro__secondary-text">~ >echo "Software Engineer"</h2>
+					<h2 class="intro__secondary-text">Software Engineer</h2>
+					<h2 class="intro__secondary-text">~ ><span class="intro__texts-blinking">_</span></h2>
 				</div>
 			</div>
 		</div>
-
-	<!--Portfolio section-->
-		<div id="Portfolio" class="container">
-			<h1 class="center">Portfólio</h1>
-			<div v-for="row in projects"> <!-- Laço que gera uma linha contendo 2 projetos (ver anotações em js/vue.js -> portfolioSectionVue.data.projects) -->
-				<div class="row">
-					<div class="box col s5 hoverable blue-grey darken-3">
-						<a :href="row[0].linkForProject">
-							<div class="container">
-								<h5 class="center"> {{ row[0].name }} </h5>
-								<img class="img-portfolio" :src="row[0].iconURL">
-								<p class="center">{{ row[0].description }}</p>
-							</div>
-						</a>
-					</div>
-					<div class="col s2">
-					</div>
-					<div class="box col s5 hoverable blue-grey darken-3">
-						<a :href="row[1].linkForProject">
-							<div class="container">
-								<h5 class="center">{{ row[1].name }}</h5>
-								<img class="img-portfolio" :src="row[1].iconURL">
-								<p class="center">{{ row[1].description }}</p>
-							</div>
-						</a>
-					</div>
-				</div>
-			</div>
-		</div>
-		
-
-
-		<!--Abilities section-->
-			<div id="Abilities" class="container">
-				<div class="hide-on-med-and-down">
-					<h1 class="center">Habilidades</h1>
-					<div class="box blue-grey darken-3">
-						<div class="row">
-							<div class="icons-abilities center col s6">
-								<i class="devicon-git-plain-wordmark"></i>
-								<br>
-								<i class="devicon-nodejs-plain"></i>
-								<i class="devicon-vuejs-plain-wordmark"></i>
-								<br>
-								<i class="devicon-html5-plain-wordmark"></i>
-								<i class="devicon-bootstrap-plain-wordmark"></i>
-								<i class="devicon-css3-plain-wordmark"></i>
-								<br>
-								<i class="devicon-c-plain-wordmark"></i>
-								<i class="devicon-python-plain-wordmark"></i>
-								<i class="devicon-java-plain-wordmark"></i>
-								<i class="devicon-php-plain"></i>
-							</div>
-							<div class="container col s6">
-							<h5 style="padding-top: 18%;">
-								+ Desenvolvedor Javascript
-								<br>
-								<br>
-								+ Conhecimento intermediário de Python/Django
-								<br>
-								<br>
-								+ Versionamento com Git
-							</h5>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="hide-on-large-only">
-						<h1 class="center">Habilidades</h1>
-						<div class="box blue-grey darken-3">
-								<div class="icons-abilities center col s6">
-									<i class="devicon-git-plain-wordmark"></i>
-									<i class="devicon-python-plain-wordmark"></i>
-									<i class="devicon-java-plain-wordmark"></i>
-									<i class="devicon-c-plain-wordmark"></i>
-									<i class="devicon-html5-plain-wordmark"></i>
-									<i class="devicon-css3-plain-wordmark"></i>
-									<i class="devicon-bootstrap-plain-wordmark"></i>
-									<i class="devicon-javascript-plain"></i>
-									<i class="devicon-vuejs-plain-wordmark"></i>
-									<i class="devicon-php-plain"></i>
-								</div>
-								<h5 class="center">
-									+ Desenvolvedor Javascript
-									<br>
-									<br>
-									+ Versionamento com Git
-									<br>
-									<br>
-									+ Conhecimento em Django
-								</h5>
-							</div>
-						</div>
-				</div>
-			</div>
-		<!--Contact section-->
-		<h1 class="center hide-on-med-and-down" style="color: white;">Contato</h1>
-			<div id="Contact" class="center container box blue-grey darken-3 hide-on-med-and-down">
-				<h2 class="like">Gostou do que viu?</h2>
-				<h2>Entre em contato</h2>
-				<img src="img/Gmail.png" > <p class="email"> kayoanderson0403@gmail.com </p>
-			</div>
-			<div id="Contact-on-med-and-down" class="center hide-on-large-only">
-				<h1>Contato</h1>
-				<div class="container box blue-grey darken-3">
-					<h5 class="like">Gostou do que viu?</h5>
-					<h5>Entre em contato</h5>
-					<img src="img/Gmail.png" > <p class="email"> kayoanderson0403@gmail.com </p>
-				</div>
-			</div>
-		<div id="Footer">
-			<div class="container">
-				<p class="center" style="padding-top: 5%;">by Kayo © 2017</p>
-				<p class="center" style="padding-top: 0%;">Icons by <a href="https://github.com/konpa">Julien Monty ©</a></p>
-				<div class="row center" style="margin-bottom: 0 !important;">
-					<a href="https://github.com/PuckmanXY"><img src="img/GitHub.png"></a>
-					<a href="https://codepen.io/Puckman/"><img src="img/codepen.png"></a>
-					<a href="http://lattes.cnpq.br/2297901541215923"><img src="img/Lattes.png"></a>
-					<a href="https://www.linkedin.com/in/Kayo-Campos"><img src="img/Linkedin.png"></a>
-				</div>
-			</div>
-		</div>
-
-
-	<!--script-->
-			<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
-			<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-			<script type="text/javascript" src="js/materialize.min.js"></script>
-			<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
-			<script src="https://cdn.jsdelivr.net/npm/vue"></script>
-			<script src="js/vue.js"></script>
-	</div>
-    </body>
+  </body>
 </html>
