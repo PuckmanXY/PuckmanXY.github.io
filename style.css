@@ -32,3 +32,13 @@
     opacity: 0;
   }
 }
+
+@media(max-width: 400px) {
+  .intro__main-text {
+    font-size: 32px;
+  }
+
+  .intro__secondary--text {
+    font-size: 16px;
+  }
+}
